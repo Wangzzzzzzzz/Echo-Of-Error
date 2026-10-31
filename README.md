@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>Echoes of Error</h1>
+<h1>Echo of error</h1>
 <h3>Echoes of Error: Residual-Directional Local Rollout Consistency for Timeseries Forecasting</h3>
 
 [Zheng Wang](https://github.com/Wangzzzzzzzz)<sup>✉</sup>, Kaixuan Zhang<sup>✉</sup>, Xiaonan Lu, Wanfang Chen
@@ -59,14 +59,14 @@ history can be updated using either the observed future (**teacher forcing**) or
 the model forecast (**free running**):
 
 <div align="center">
-<img src="assets/equations/next_states.png" width="600" alt="Teacher-forced and free-running next states, constructed from the observed future and the model forecast, respectively.">
+<img src="assets/equations/next_states.png" width="420" alt="Teacher-forced and free-running next states, constructed from the observed future and the model forecast, respectively.">
 </div>
 
 Local rollout consistency penalizes the discrepancy between the next predictions
 from these two states:
 
 <div align="center">
-<img src="assets/equations/local_consistency.png" width="560" alt="The local consistency loss is the squared Euclidean distance between the teacher-forced and free-running next predictions.">
+<img src="assets/equations/local_consistency.png" width="400" alt="The local consistency loss is the squared Euclidean distance between the teacher-forced and free-running next predictions.">
 </div>
 
 ### 2. Practical Residual-Directional Regularization
@@ -80,7 +80,7 @@ the model's response. The practical objective combines two terms:
 - **Consistency penalty:** suppress the response to the model's own forecast residual.
 
 <div align="center">
-<img src="assets/equations/practical_objective.png" width="850" alt="The practical objective is squared residual error plus lambda times the squared input JVP along a detached, randomly inserted residual direction.">
+<img src="assets/equations/practical_objective.png" width="600" alt="The practical objective is squared residual error plus lambda times the squared input JVP along a detached, randomly inserted residual direction.">
 </div>
 
 The insertion operator zero-pads the residual at a sampled position, and **sg**
