@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>Echo of error</h1>
+<h1>Echoes of error</h1>
 <h3>Echoes of Error: Residual-Directional Local Rollout Consistency for Timeseries Forecasting</h3>
 
 [Zheng Wang](https://github.com/Wangzzzzzzzz)<sup>✉</sup>, Kaixuan Zhang<sup>✉</sup>, Xiaonan Lu, Wanfang Chen
